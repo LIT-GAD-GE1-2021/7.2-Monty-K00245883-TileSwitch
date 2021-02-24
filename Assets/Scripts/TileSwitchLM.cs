@@ -9,7 +9,7 @@ public class TileSwitchLM : MonoBehaviour
     public GameObject greenWallMap;
     public GameObject redWallMap;
     public bool greenSwitchOff;
-    public bool redSwitchOff;
+    public bool redSwitchOn;
     private void Awake()
     {
         instance = this;
@@ -17,13 +17,13 @@ public class TileSwitchLM : MonoBehaviour
     void Start()
     {
         greenSwitchOff = true;
-        redSwitchOff = true;
+        redSwitchOn = false;
     }
 
     void Update()
     {
         greenWallMap.SetActive(greenSwitchOff);
-        redWallMap.SetActive(redSwitchOff);
+        redWallMap.SetActive(redSwitchOn);
     }
 
 }

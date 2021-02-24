@@ -20,7 +20,7 @@ public class Switch : MonoBehaviour
         }
         if (this.name == "RedSwitch")
         {
-            TileSwitchLM.instance.redSwitchOff = !TileSwitchLM.instance.redSwitchOff;
+            TileSwitchLM.instance.redSwitchOn = !TileSwitchLM.instance.redSwitchOn;
         }
     }
 }
